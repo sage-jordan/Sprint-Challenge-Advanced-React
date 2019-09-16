@@ -7,4 +7,9 @@ test('renders without crashing', () => {
     console.log(container);
 }) 
 
-test('verify ')
+test('verify balls and strikes display', () => {
+    const container = render(<App/>);
+    const balls = container.getByText('Balls');
+    const strikes = container.getByText('Strikes');
+    console.log("Balls:", balls, "Strikes:", strikes);
+});
