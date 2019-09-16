@@ -4,7 +4,7 @@ import App from './app';
 
 test('renders without crashing', () => {
     const container = render(<App/>);
-    console.log(container);
+    console.log("Container:", container);
 }) 
 
 test('verify balls and strikes display', () => {
