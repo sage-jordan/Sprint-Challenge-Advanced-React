@@ -2,12 +2,12 @@ import React, { useState, useEffect } from 'react';
 import './App.css';
 import axios from 'axios';
 import { Card } from 'semantic-ui-react';
-import { useLocalStorage } from './useLocalStorage';
+import { UseLocalStorage } from './useLocalStorage';
 
 function App() {
 
   const [data, setData] = useState([]);
-  const [storedValue, setValue] = useLocalStorage("name", {});
+  const [storedValue, setValue] = UseLocalStorage("name", {});
 
   // UseEffect and axios call, set data to res.data
   useEffect(() => {
